@@ -16,7 +16,7 @@ Damit wir gleich durchstarten können, solltest du ein paar Vorbereitungen treff
 2. Visual Studio Code **1.10** oder höher: [https://code.visualstudio.com](https://code.visualstudio.com)
    * [Angular-Schule: Extension Pack](https://marketplace.visualstudio.com/items?itemName=angular-schule.angular-schule-extension-pack) für Visual Studio Code 
 3. Google Chrome: [https://www.google.com/chrome/](https://www.google.com/chrome/)
-5. Git (und ggf. ein Client wie GitExtensions: [https://gitextensions.github.io](https://gitextensions.github.io))
+4. OPTIONAL: ~~Git (und ggf. ein Client wie GitExtensions: [https://gitextensions.github.io](https://gitextensions.github.io))~~
 
 
 ## Pakete installieren
