@@ -1,3 +1,4 @@
+import { BookStoreService } from './../shared/book-store.service';
 import { BookComponent } from './../book/book.component';
 import { AfterViewInit, Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { Book } from './../shared/book';
@@ -19,13 +20,10 @@ export class DashboardComponent implements OnInit, AfterViewInit, OnDestroy {
 
   subscribtion: Subscription;
 
-  constructor() { }
+  constructor(private bs: BookStoreService) { }
 
   ngOnInit() {
-    this.books = [
-      new Book('12345678', 'Angular', 'Angular rocks! <3', 4),
-      new Book('98765432', 'AngularJS 1.x', 'Oldie but goldie', 3)
-    ];
+    this.books = this.bs.getAll();
     this.reorderBooks(null);
   }
 
